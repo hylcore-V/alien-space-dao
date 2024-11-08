@@ -2,7 +2,6 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   justify-content: center;
   padding-block: 10px;
   max-width: 1600px;

@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid red;
+  
   text-align: center;
   padding: 50px 20px 80px;
 }
@@ -47,13 +47,13 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  border: 1px solid red;
+  
 }
 
 .third-about {
   max-width: 1600px;
   margin-inline: auto;
-  border: 1px solid red;
+  
   width: 80%;
   display: flex;
   margin-inline: auto;
@@ -72,7 +72,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border: 1px solid red;
+  
   gap: 20px;
 }
 
@@ -103,13 +103,13 @@
 }
 
 .fifth-about li {
-  border: 1px solid red;
+  
   border-radius: 50px;
 }
 
 .sixth-about {
   max-width: 1600px;
-  border: 1px solid red;
+  
   margin-inline: auto;
   background-color: rgba(0, 0, 0, 0.7);
 }

@@ -1,5 +1,5 @@
-import background from "../assets/Home/galaxyEarthMilkyWay.jpg";
-import absolute from "../assets/About/Absolute2.webp";
+import background from "../../assets/Home/galaxyEarthMilkyWay.jpg";
+import absolute from "../../assets/About/Absolute2.webp";
 import "./about.css";
 
 function About() {

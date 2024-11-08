@@ -1,4 +1,4 @@
-import background from "../assets/Home/galaxyEarthMilkyWay.jpg";
+import background from "../../assets/Home/galaxyEarthMilkyWay.jpg";
 import "./contact.css";
 
 function Contact() {

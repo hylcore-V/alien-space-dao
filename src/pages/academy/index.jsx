@@ -1,5 +1,5 @@
 import "./academy.css";
-import background from "../assets/Home/galaxyEarthMilkyWay.jpg";
+import background from "../../assets/Home/galaxyEarthMilkyWay.jpg";
 
 function Academy() {
   return (
