@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Titles";
   src: url("./assets/Fonts/AtomicAge-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -10,36 +10,55 @@
   src: url("./assets/Fonts/Exo-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+} */
+
+/* App.css or index.css */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+/* App.css or index.css */
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Exo:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900&display=swap');
+
+:root {
+  --green: #00eb81;
+  --gold: #fcf06f;
+  --purple: #070618;
+}
+body {
+  background-image: url('./assets/background.webp');
+  @apply font-exo text-green leading-[1.8] text-[14px] lg:text-[16px];
 }
 
-.primary-color {
-  color: #69af00;
+main {
+  @apply mt-[100px];
+}
+section {
+  @apply py-16
+}
+.inner-container {
+  @apply container mx-auto px-4 md:max-w-[1440px];
+}
+.btn-border-gradient {
+  @apply relative border border-transparent bg-clip-padding rounded-md h-fit py-[10px] px-6 hover:text-white transition-all duration-700;
+  background-color: var(--purple);
 }
 
-.normalbutton {
-  background-color: #69af00;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+.btn-border-gradient::after {
+  @apply absolute left-[-1px] right-[-1px] top-[-1px] bottom-[-1px] z-[-1] rounded-md pointer-events-none;
+  background-image: linear-gradient(90deg, var(--green), var(--gold), var(--green));
+  background-size: 200% 200%; /* Creates a larger gradient area for smooth transition */
+  animation: gradientBorderAnim 3s ease infinite;
+  content: '';
 }
 
-.normalbutton:hover {
-  animation: grow-shrink 0.3s infinite alternate;
-}
-
-@keyframes grow-shrink {
+@keyframes gradientBorderAnim {
   0% {
-    transform: scale(1);
+    background-position: 0% 50%; /* Start position */
+  }
+  50% {
+    background-position: 100% 50%; /* Mid position for smooth transition */
   }
   100% {
-    transform: scale(1.05);
+    background-position: 0% 50%; /* End position returns to start */
   }
 }
 
-.normalbutton img {
-  margin-right: 10px;
-}
+

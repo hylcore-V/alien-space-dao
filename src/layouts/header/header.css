@@ -1,0 +1,9 @@
+header nav a:hover {
+  @apply text-green opacity-70 transition-opacity duration-700;
+}
+.hamburger-button {
+  @apply fixed top-8 right-4 w-[30px] flex flex-col gap-y-[8px] cursor-pointer;
+}
+.hamburger-button div {
+  @apply w-full h-[2px] bg-green rounded-md;
+}

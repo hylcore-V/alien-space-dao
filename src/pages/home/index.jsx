@@ -1,135 +1,122 @@
-import "./home.css";
-import background from "../../assets/Home/galaxyEarthMilkyWay.jpg";
-import alienbook from "../../assets/Home/alienbook.webp";
-import academy from "../../assets/Home/Academy.webp";
-import club from "../../assets/Home/Club.webp";
-import conetwork from "../../assets/Home/Conetwork.webp";
+import './home.css'
+// import background from "../../assets/Home/galaxyEarthMilkyWay.jpg";
+import alienbook from '../../assets/Home/alienbook.webp'
+import Button from '../../components/button'
+import {
+  StartIcon,
+  DeFiICon,
+  DeSciIcon,
+  GameFiIcon,
+  ReFiIcon,
+  AcademyIcon,
+  ClubIcon,
+  CoNetWorkingIcon,
+  ContactIcon,
+  LockIcon
+} from './utils'
+import threeRelation from '../../../src/assets/Home/3-relationship.webp'
+import complexRelation from '../../../src/assets/Home/complex-relation.webp'
+import academy from '../../../src/assets/Home/academy.webp'
+import club from '../../../src/assets/Home/club.webp'
+import conetwork from '../../../src/assets/Home/conetwork.webp'
+import btcImg from '../../../src/assets/Home/section-02/btc-jpg.jfif'
+import BlockchainImg from '../../../src/assets/Home/section-02/Blockchain-jpg.webp'
+import ACoinJpgImg from '../../../src/assets/Home/section-02/ACoin-jpg.webp'
+import CardanoImg from '../../../src/assets/Home/section-03/Cardano-jpg.jfif'
+import CosmosImg from '../../../src/assets/Home/section-03/Cosmos-jpg.jfif'
+import ethereumImg from '../../../src/assets/Home/section-03/ethereum.png'
+import orgImg from '../../../src/assets/Home/section-03/org-jpg.jfif'
+import polygonImg from '../../../src/assets/Home/section-03/polygonm-jpg.jfif'
+import xmrImg from '../../../src/assets/Home/section-03/xmr-jpg.jfif'
 
-function Landing() {
-    return (
-        <div className="home">
-            <section className="first-home">
-                <h1 className="primary-color">ALIEN FLOW SPACE</h1>
-                <p className="text">
-                    Access & Explore the DAO Ecosystem Solutions
-                    <br />
-                    Unlock the Evolution of Energy Efficiency with Environmental
-                    Sustainability
-                </p>
+import background from '../../assets/Home/background.png'
 
-                <h3>
-                    Boost BENEFITS, Raise your QUALITY of LIFE, with Mutual PROFITS; to
-                    connect you EXCLUSIVE ADVANTAGES…
-                </h3>
-                <button className="normalbutton">Start Now!</button>
-                <img src={alienbook} className="image1" />
-            </section>
+import { Link } from 'react-router-dom'
 
-            <section className="second-home">
-                <div className="buttonlist">
-                    <button className="normalbutton">DeFi</button>
-                    <button className="normalbutton">DeSci</button>
-                    <button className="normalbutton">GameFi</button>
-                    <button className="normalbutton">ReFi</button>
-                </div>
-
-            </section>
-
-            <section className="third-home">
-                <div>
-                    <button className="specialbutton">
-                        <img src={academy} />
-                    </button>
-                    Learn & Win:
-                </div>
-                <div>
-                    <button className="specialbutton">
-                        <img src={club} />
-                    </button>
-                    Enjoy Advantage:
-                </div>
-                <div>
-                    <button className="specialbutton">
-                        <img src={conetwork} />
-                    </button>
-                    Elevate your succes:
-                </div>
-            </section>
-
-            <section className="fourth-home">
-                <button className="normalbutton">Academy</button>
-                <button className="normalbutton">Clubs</button>
-                <button className="normalbutton">CoNetWorking</button>
-            </section>
-
-            <section className="fifth-home">
-                <h1>Financial Freedom</h1>
-                <p className="text">
-                    Any Individual or Professional can understand the ADVANTAGES of
-                    digital money.
-                    <br />
-                    Impartial money that does not discriminate, decentralized currencies;
-                    stable without volatility, as well as safe reserves of values.
-                    <br />
-                    Access with Crypto, NFTs, Tokens to Order & Generate all types of
-                    Experiences, Products & Services according to your demands, instantly
-                </p>
-            </section>
-
-            <section className="sixth-home">
-                <div>
-                    <img></img>
-                    Cash Money Peer To Peer (P2P)
-                </div>
-                <div>
-                    <img></img>
-                    Person to Person Digital Money
-                </div>
-                <div>
-                    <img></img>
-                    Wallet Connect Web 3!
-                </div>
-            </section>
-
-            <section className="seventh-home">
-                <h1>FAQS Questions?</h1>
-                <p>
-                    Whether you're curious about features, a free trial, or even press
-                    releases, we're here to answer all your questions.
-                </p>
-                <button className="normalbutton">Contact Now!</button>
-                <img src="" />
-            </section>
-
-            <section className="eighth-home">
-                <article>
-                    <div className="icon" />
-                    <div>
-                        <h4>SECURE PAYMENT</h4>
-                        <p>All our payments are encrypted and secured with SSL</p>
-                    </div>
-                </article>
-                <article>
-                    <div className="icon" />
-                    <div>
-                        <h4>DELIVERY WITH CARE</h4>
-                        <p>
-                            Ultra-fast shipping to your door with efficiency & sustainability
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <div className="icon" />
-                    <div>
-                        <h4>EXCELLENT SERVICE</h4>
-                        <p>Live chat and 24/7 support guarantee it</p>
-                    </div>
-                </article>
-            </section>
-
-            <img className="background" src={background} />
+function Landing () {
+  return (
+    <main>
+      <section aria-label='sec-hero'>
+        <div className='inner-container'>
+          <h1 className='mb-24 font-atomic font-bold text-[72px] text-green'>
+            ΔlieπFlΦw$pac€ D∆Φ
+          </h1>
+          <div className='items-center gap-x-4 gap-y-4 grid grid-cols-5 w-fit'>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+            <Button className='flex justify-center items-center gap-x-4 btn-border-gradient w-40'>
+              <DeFiICon
+                size={20}
+                className='flex-[0_0_auto] hover:fill-white fill-green'
+              />
+              DeFi
+            </Button>
+          </div>
         </div>
-    );
+      </section>
+    </main>
+  )
 }
 
-export default Landing;
+export default Landing

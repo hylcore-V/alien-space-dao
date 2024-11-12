@@ -1,0 +1,12 @@
+export { default as StartIcon } from './StartIcon';
+export { default as DeFiICon } from './DeFiIcon';
+export { default as DeSciIcon } from './DeSciIcon';
+export { default as GameFiIcon } from './GameFiIcon';
+export { default as ReFiIcon } from "./ReFiIcon";
+export { default as AcademyIcon } from "./AcademyIcon";
+export { default as ClubIcon } from "./ClubIcon";
+export { default as CoNetWorkingIcon } from "./CoNetWorkingIcon";
+export { default as ContactIcon } from "./ContactIcon";
+export { default as LockIcon } from "./LockIcon";
+export { default as DeliveryIcon } from "./DeliveryIcon";
+export { default as ExcellentIcon } from "./ExcellentIcon";

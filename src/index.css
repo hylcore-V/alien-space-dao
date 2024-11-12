@@ -15,3 +15,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #444;
 }
+@font-face {
+  font-family: "Titles";
+  src: url("./assets/Fonts/AtomicAge-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Text";
+  src: url("./assets/Fonts/Exo-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

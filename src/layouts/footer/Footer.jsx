@@ -7,19 +7,7 @@ function Footer() {
 
   return (
     <footer>
-      <section className="first-footer">
-        <h3>Earth Powered Space</h3>
-        <ul className="list-footer">
-          <li>mail</li>
-          <li>face</li>
-          <li>insta</li>
-          <li>linkedin</li>
-          <li>telegram</li>
-          <li>twitter</li>
-          <li>whats</li>
-          <li>youtu</li>
-        </ul>
-      </section>
+      
 
       <ul className="second-footer">
         <li>
